@@ -1,0 +1,160 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Welcome To Pune</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div padding>
+    <ion-segment [(ngModel)]="Menu">
+      <ion-segment-button value="Eat"
+      >
+        Eat
+      </ion-segment-button>
+      <ion-segment-button value="Shop">
+        Shop
+      </ion-segment-button>
+      <ion-segment-button value="Hotels">
+        Hotels
+      </ion-segment-button>
+      <ion-segment-button value="See">
+        See
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="Menu">
+
+  <!-- Eat Start here -->
+
+    <ion-list *ngSwitchCase="'Eat'">
+      <ion-item>
+        <ion-card>
+          <img src="../../assets/imgs/Pune_Eat_Changs.jpg" />
+          <div class="card-title">Chang's</div>
+          <div class="card-subtitle">Viman Nagar, Pune</div>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+
+  <!-- Shop Start here -->
+
+    <ion-list *ngSwitchCase="'Shop'">
+      <ion-item>
+
+        <ion-card (click)="goToPuneShopSeasonsPage()">
+          <img src="../../assets/imgs/Pune_Shop_Seasons.jpg"/>
+          <div class="card-title">Seasons Mall</div>
+          <div class="card-subtitle">Hadapsar, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneShopPhoenixPage()">
+            <img src="../../assets/imgs/Pune_Shop_Phoenix.jpg"/> 
+            <div class="card-title">Phoenix Marketcity</div>
+            <div class="card-subtitle">Viman Nagar Rd, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneShopAmanoraPage()">
+            <img src="../../assets/imgs/Pune_Shop_Amanora.jpg"/>
+            <div class="card-title">Amanora Mall</div>
+            <div class="card-subtitle">Hadapsar, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneShopKumarPage()">
+            <img src="../../assets/imgs/Pune_Shop_Kumar.jpg"/> 
+            <div class="card-title">Kumar Pacific Mall</div>
+            <div class="card-subtitle">Shankar Sheth Rd, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneShopNiteshPage()">
+            <img src="../../assets/imgs/Pune_Shop_Nitesh.jpg"/> 
+            <div class="card-title">Nitesh HUb</div>
+            <div class="card-subtitle">Koregaon Park, Pune</div>
+        </ion-card>
+
+      </ion-item>
+    </ion-list>
+
+  <!-- Hotels start here   -->
+
+    <ion-list *ngSwitchCase="'Hotels'">
+        <ion-item>
+          <ion-card (click)="goToPuneHotelsOrchidPage()">
+            <img src="../../assets/imgs/Pune_Hotels_Orchid.jpg" />
+            <div class="card-title">Orchid</div>
+            <div class="card-subtitle"> Pune-Banglore Rd, Balewadi, Pune</div>
+          </ion-card>
+        
+
+        <ion-card (click)="goToPuneHotelsHyattPage()">
+            <img src="../../assets/imgs/Pune_Hotels_Hyatt.jpg" />
+            <div class="card-title">Hyatt Pune</div>
+            <div class="card-subtitle">Nagar Rd, Kalyani Nagar, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneHotelsJwPage()">
+            <img src="../../assets/imgs/Pune_Hotels_Jw.jpg" />
+            <div class="card-title">JW Marriott Hotel</div>
+            <div class="card-subtitle"> Senapati Bapat Rd, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneHotelsRadissonPage()">
+            <img src="../../assets/imgs/Pune_Hotels_Radisson.jpg" /> 
+            <div class="card-title">Radisson Blu</div>
+            <div class="card-subtitle">Kharadi, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneHotelsWestinPage()">
+            <img src="../../assets/imgs/Pune_Hotels_Westin.jpg" />
+            <div class="card-title">Westin Hotel</div>
+            <div class="card-subtitle">Koregaon Park, Pune</div>
+        </ion-card>
+
+        </ion-item>
+      </ion-list>
+  
+      
+  <!-- See start here -->
+
+  <ion-list *ngSwitchCase="'See'">
+      <ion-item>
+
+        <ion-card (click)="goToPune_See_SinhagadPage()">
+          <img src="../../assets/imgs/Pune_See_Sinhgad.jpg"/>
+          <div class="card-title">Sinhagad Fort</div>
+          <div class="card-subtitle">Sinhagad Ghat Road, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneSeeShaniwarPage()">
+            <img src="../../assets/imgs/Pune_See_Shaniwar.jpg"/>
+            <div class="card-title">Shaniwar Wada</div>
+            <div class="card-subtitle">Shaniwar Peth, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneSeeGTemplePage()">
+            <img src="../../assets/imgs/Pune_See_Dagadusheth.png"/>
+            <div class="card-title">Ganapati Temple</div>
+            <div class="card-subtitle">Budhwar Peth, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneSeeOkayamaPage()">
+            <img src="../../assets/imgs/Pune_See_Okayama.jpg"/>
+            <div class="card-title">Okayama Garden</div>
+            <div class="card-subtitle">Sinhagad Road, Pune</div>
+        </ion-card>
+
+        <ion-card (click)="goToPuneSeeLavasaPage()">
+            <img src="../../assets/imgs/Pune_See_Lavasa.jpg"/>
+            <div class="card-title">Lavasa City</div>
+            <div class="card-subtitle">Lavasa Gaon, Pune</div>
+        </ion-card>
+
+
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>

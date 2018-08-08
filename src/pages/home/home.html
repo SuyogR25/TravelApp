@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>TravelApp</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card (click)="goToPunePage()">
+    <img src="../../assets/imgs/Pune_Card.jpg" />
+    <div class="card-title">Pune</div>
+    <div class="card-subtitle">Maharashtra</div>
+  </ion-card>
+
+  <ion-card (click)="goToMumbaiPage()">
+      <img src="../../assets/imgs/Mumbai_Card.jpg" />
+      <div class="card-title">Mumbai</div>
+      <div class="card-subtitle">Maharashtra</div>
+    </ion-card>
+
+    <ion-card (click)="goToKolkataPage()">
+        <img src="../../assets/imgs/Kolkata_Card.jpg" />
+        <div class="card-title">Kolkata</div>
+        <div class="card-subtitle"> West Bengal</div>
+      </ion-card>
+
+      <ion-card (click)="goToBenguluruPage()">
+          <img src="../../assets/imgs/Bangalore_Card.jpg" />
+          <div class="card-title"> Bengaluru</div>
+          <div class="card-subtitle">Karnataka</div>
+        </ion-card>
+</ion-content>
